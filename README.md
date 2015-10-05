@@ -13,6 +13,7 @@ The idea for this app came from looking at the local job-board webside [Mac's Li
 * Basic routes made for logging in as an employer or developer
 * Basic Models created for employers and developers
 * Basic sign-up and login forms built and handled by router actions
+* I attempted to include a select dropdown for easy fake user login but this appears to be more difficult in ember. I have been advised to use x-select here to get what we need.
 
 ## 2 Notes About Where We Are:
 
@@ -21,6 +22,7 @@ The idea for this app came from looking at the local job-board webside [Mac's Li
 
 ## 3 Where We Want To Go:
 
+* fake login! x-select style
 * Make employers and companies fill out their full profiles after sign-up to further interact with the site
 * build page for employers to see all currently available developers
 * build page for developers to view employers currently seeking developers
@@ -29,6 +31,7 @@ The idea for this app came from looking at the local job-board webside [Mac's Li
 * Build out problem model (consisting of title, body, author, difficulty)
 * Build out test model (consisting of problem, answer_text(or github embed link), video_url, test_start, test_finish)
 * Add linkedIn profile links to developers to ease form completion on the developer user end?
+* styling can be done at the will of anyone involved.
 
 ## Prerequisites
 

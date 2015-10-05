@@ -1,16 +1,6 @@
 {{yield}}
 <div class="container">
   {{#if devLogin}}
-  <h1>Developer Login</h1>
-  {{#bs-form}}
-    {{#bs-form-group}}
-      {{bs-input value=email placeholder="email"}}
-    {{/bs-form-group}}
-    {{#bs-form-group}}
-      {{bs-input value=password placeholder="password"}}
-    {{/bs-form-group}}
-    {{#bs-button class="btn-primary" action='save'}}Submit{{/bs-button}}
-  {{/bs-form}}
   {{else}}
     {{#bs-button class="btn-primary center-block" action='devLoginShow'}}Developer Login{{/bs-button}}
   {{/if}}

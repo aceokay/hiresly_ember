@@ -5,6 +5,11 @@ export default Ember.Component.extend({
   actions: {
     devLoginShow() {
       this.set('devLogin', true);
+    },
+    devSelect() {
+      var devId = this.get('select');
+      debugger;
+      this.sendAction('saveNewDev', devId);
     }
   }
 });
