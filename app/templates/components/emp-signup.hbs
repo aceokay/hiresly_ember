@@ -1,8 +1,11 @@
 {{yield}}
 <div class="container">
-  {{#if addNewDev}}
-  <h1>New Developer Sign-up</h1>
+  {{#if addNewEmp}}
+  <h1>New Employer Sign-up</h1>
   {{#bs-form}}
+    {{#bs-form-group}}
+      {{bs-input value=company placeholder="company"}}
+    {{/bs-form-group}}
     {{#bs-form-group}}
       {{bs-input value=email placeholder="email"}}
     {{/bs-form-group}}
@@ -12,6 +15,6 @@
     {{#bs-button class="btn-primary" action='save'}}Save{{/bs-button}}
   {{/bs-form}}
   {{else}}
-    {{#bs-button class="btn-primary center-block" action='devFormShow'}}Developer Sign-up{{/bs-button}}
+    {{#bs-button class="btn-danger center-block" action='empFormShow'}}Employer Sign-up{{/bs-button}}
   {{/if}}
 </div>
