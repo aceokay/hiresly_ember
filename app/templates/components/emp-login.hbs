@@ -1,0 +1,17 @@
+{{yield}}
+<div class="container">
+  {{#if empLogin}}
+  <h1>Employer Login</h1>
+  {{#bs-form}}
+    {{#bs-form-group}}
+      {{bs-input value=email placeholder="email"}}
+    {{/bs-form-group}}
+    {{#bs-form-group}}
+      {{bs-input value=password placeholder="password"}}
+    {{/bs-form-group}}
+    {{#bs-button class="btn-primary" action='save'}}Submit{{/bs-button}}
+  {{/bs-form}}
+  {{else}}
+    {{#bs-button class="btn-danger center-block" action='empLoginShow'}}Employer Login{{/bs-button}}
+  {{/if}}
+</div>
