@@ -2,18 +2,18 @@
 
 Connecting employers with developers in the Portland Metro area. Developers can create a profile, complete code challenges and generally prove their abilities. Developers must return a full answer and a video walkthrough (screencast) of their code. Employers can see what the dev talent have to offer and can even send tests  (made up of a problem) to developers to further see what the developer can do.
 
-## Where We Are:
+## 1 Where We Are:
 
 * Basic routes made for logging in as an employer or developer
 * Basic Models created for employers and developers
 * Basic sign-up and login forms built and handled by router actions
 
-## Notes About Where We Are:
+## 2 Notes About Where We Are:
 
 * Sign-up and login have no authentication
 * passwords are stored in plaintext
 
-## Where We Want To Go:
+## 3 Where We Want To Go:
 
 * Make employers and companies fill out their full profiles after sign-up to further interact with the site
 * build page for employers to see all currently available developers
