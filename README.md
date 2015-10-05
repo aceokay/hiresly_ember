@@ -1,7 +1,27 @@
 # Hiresly
 
-This README outlines the details of collaborating on this Ember application.
-A short introduction of this app could easily go here.
+Connecting employers with developers in the Portland Metro area. Developers can create a profile, complete code challenges and generally prove their abilities. Developers must return a full answer and a video walkthrough (screencast) of their code. Employers can see what the dev talent have to offer and can even send tests  (made up of a problem) to developers to further see what the developer can do.
+
+## Where We Are:
+
+* Basic routes made for logging in as an employer or developer
+* Basic Models created for employers and developers
+* Basic sign-up and login forms built and handled by router actions
+
+## Notes About Where We Are:
+
+* Sign-up and login have no authentication
+* passwords are stored in plaintext
+
+## Where We Want To Go:
+
+* Make employers and companies fill out their full profiles after sign-up to further interact with the site
+* build page for employers to see all currently available developers
+* build page for developers to view employers currently seeking developers
+* Build out a select for logging in (completely unsecure but for testing)
+* Roll in Authentication (can we get a volunteer for this?)
+* Build out problem model (consisting of title, body, author, difficulty)
+* Build out test model (consisting of problem, answer_text(or github embed link), video_url, test_start, test_finish)
 
 ## Prerequisites
 
@@ -41,13 +61,4 @@ Make use of the many generators for code, try `ember help generate` for more det
 
 ### Deploying
 
-Specify what it takes to deploy your app.
-
-## Further Reading / Useful Links
-
-* [ember.js](http://emberjs.com/)
-* [ember-cli](http://www.ember-cli.com/)
-* Development Browser Extensions
-  * [ember inspector for chrome](https://chrome.google.com/webstore/detail/ember-inspector/bmdblncegkenkacieihfhpjfppoconhi)
-  * [ember inspector for firefox](https://addons.mozilla.org/en-US/firefox/addon/ember-inspector/)
-
+One Day we'll have it deployed. Still in development.
