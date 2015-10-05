@@ -1,6 +1,12 @@
 # Hiresly
 
-Connecting employers with developers in the Portland Metro area. Developers can create a profile, complete code challenges and generally prove their abilities. Developers must return a full answer and a video walkthrough (screencast) of their code. Employers can see what the dev talent have to offer and can even send tests  (made up of a problem) to developers to further see what the developer can do.
+Connecting employers with developers in the Portland Metro area.
+
+Developers can create a profile, complete code challenges and generally prove their abilities. Developers must return a full answer and a video walkthrough (screencast) of their code.
+
+Employers can see what the dev talent have to offer and can even send tests  (made up of a problem) to developers to further see what the developer can do.
+
+The idea for this app came from looking at the local job-board webside [Mac's List](https://www.macslist.org/) and coming to the conclusion that we could do the same thing, but better, and for developers. Let the developers shine!
 
 ## 1 Where We Are:
 
@@ -22,6 +28,7 @@ Connecting employers with developers in the Portland Metro area. Developers can 
 * Roll in Authentication (can we get a volunteer for this?)
 * Build out problem model (consisting of title, body, author, difficulty)
 * Build out test model (consisting of problem, answer_text(or github embed link), video_url, test_start, test_finish)
+* Add linkedIn profile links to developers to ease form completion on the developer user end?
 
 ## Prerequisites
 
