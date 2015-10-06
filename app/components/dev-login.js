@@ -7,9 +7,8 @@ export default Ember.Component.extend({
       this.set('devLogin', true);
     },
     devSelect() {
-      var devId = this.get('select');
-      debugger;
-      this.sendAction('saveNewDev', devId);
+      var devId = this.get('developer');
+      this.sendAction('navDevHome', devId);
     }
   }
 });

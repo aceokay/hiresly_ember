@@ -1,6 +1,16 @@
 {{yield}}
 <div class="container">
   {{#if devLogin}}
+  {{#bs-form}}
+    {{#bs-form-group}}
+      {{#x-select value=developer}}
+        {{#each developers as |developer|}}
+          {{#x-option value=developer.id}}{{developer.email}}{{/x-option}}
+        {{/each}}
+      {{/x-select}}
+    {{/bs-form-group}}
+    <button class="btn btn-success center-block" {{action 'devSelect'}}>Login</button>
+  {{/bs-form}}
   {{else}}
     {{#bs-button class="btn-primary center-block" action='devLoginShow'}}Developer Login{{/bs-button}}
   {{/if}}
