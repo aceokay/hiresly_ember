@@ -1,8 +1,6 @@
 {{outlet}}
 {{#if model.name}}
-<p>
-  true
-</p>
+  {{dev-profile developer=model}}
 {{else}}
   {{developer-complete-form developer=model complete="complete"}}
 {{/if}}

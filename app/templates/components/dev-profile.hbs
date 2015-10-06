@@ -1,0 +1,19 @@
+{{yield}}
+<div class="container">
+  <h1>Hello, {{developer.name}}</h1>
+  <br>
+  <h3>Your information:</h3>
+  <ul>
+    <li>LinkedIn: </li>
+    <li>GitHub: </li>
+    <li>Portfolio: </li>
+  </ul>
+  <br>
+  <h3>Tests Completed</h3>
+  <ul>
+    <li>To be generated dynamically</li>
+    {{#each developer.tests as |test|}}
+    <li>{{test.problem.title}}</li>
+    {{/each}}
+  </ul>
+</div>
