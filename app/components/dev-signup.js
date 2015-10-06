@@ -9,6 +9,7 @@ export default Ember.Component.extend({
     save() {
       var params = {
         name: null,
+        address: null,
         email: this.get('email'),
         password: this.get('password')
       };

@@ -1,0 +1,10 @@
+{{yield}}
+<div class="container">
+  <h1>Verify your company's location:</h1>
+  {{#bs-form}}
+    {{#bs-form-group}}
+      {{bs-input value=address placeholder="Address"}}
+    {{/bs-form-group}}
+    <button class=" btn btn-primary" {{action 'completeProfile' employer}}>Verify</button>
+  {{/bs-form}}
+</div>

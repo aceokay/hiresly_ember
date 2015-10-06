@@ -1,1 +1,8 @@
 {{outlet}}
+{{#if model.address}}
+<p>
+  true
+</p>
+{{else}}
+  {{employer-complete-form employer=model complete="complete"}}
+{{/if}}
