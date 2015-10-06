@@ -1,1 +1,8 @@
 {{outlet}}
+{{#if model.name}}
+<p>
+  true
+</p>
+{{else}}
+  {{developer-complete-form developer=model complete="complete"}}
+{{/if}}
