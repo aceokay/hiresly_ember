@@ -6,10 +6,5 @@ export default Ember.Route.extend({
       developers: this.store.findAll('developer'),
       employers: this.store.findAll('employer')
     });
-  },
-  actions: {
-    navDevHome(devId) {
-      this.transitionTo('developer', devId);
-    }
   }
 });

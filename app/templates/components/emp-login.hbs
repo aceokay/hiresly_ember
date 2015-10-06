@@ -1,17 +1,24 @@
 {{yield}}
 <div class="container">
   {{#if empLogin}}
-  <h1>Employer Login</h1>
-  {{#bs-form}}
-    {{#bs-form-group}}
-      {{bs-input value=email placeholder="email"}}
-    {{/bs-form-group}}
-    {{#bs-form-group}}
-      {{bs-input value=password placeholder="password"}}
-    {{/bs-form-group}}
-    {{#bs-button class="btn-primary" action='save'}}Submit{{/bs-button}}
-  {{/bs-form}}
+  <ul>
+    {{#each employers as |employer|}}
+    {{#link-to 'employer' employer.id}}
+    <button>{{employer.email}}</button>
+    {{/link-to}}
+    {{/each}}
+  </ul>
   {{else}}
     {{#bs-button class="btn-danger center-block" action='empLoginShow'}}Employer Login{{/bs-button}}
   {{/if}}
 </div>
+
+
+<!-- <form> BROKEN, FOR WHATEMBER REASON
+  {{#x-select value=employer}}
+    {{#each employers as |employer|}}
+      {{#x-option value=employer.id}}{{employer.email}}{{/x-option}}
+    {{/each}}
+  {{/x-select}}
+  <button {{action 'empSelect'}}>Login</button>
+</form> -->

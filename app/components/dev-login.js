@@ -5,10 +5,6 @@ export default Ember.Component.extend({
   actions: {
     devLoginShow() {
       this.set('devLogin', true);
-    },
-    devSelect() {
-      var devId = this.get('developer');
-      this.sendAction('navDevHome', devId);
     }
   }
 });
