@@ -1,0 +1,13 @@
+{ "problems": [
+  {
+  "title": "Fizz Buzz",
+  "body": "Write a program that prints the numbers from 1 to 100. But for multiples of three print 'Fizz' instead of the number and for the multiples of five print 'Buzz'. For numbers which are multiples of both three and five print 'FizzBuzz'.",
+  "Author": "hiresly",
+  "difficulty": "easy"
+}, {
+  "title": "Largest palindrome product",
+  "body": "A palindromic number reads the same both ways. The largest palindrome made from the product of two 2-digit numbers is 9009 = 91 × 99. Find the largest palindrome made from the product of two 3-digit numbers.",
+  "Author": "hiresly",
+  "difficulty": "easy"
+}]
+}
