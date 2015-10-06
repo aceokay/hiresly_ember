@@ -1,6 +1,7 @@
 {{outlet}}
 {{#if model.name}}
   {{dev-profile developer=model}}
+  {{first-test developer=model startTest="startTest"}}
 {{else}}
   {{developer-complete-form developer=model complete="complete"}}
 {{/if}}
