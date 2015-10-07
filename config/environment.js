@@ -7,7 +7,7 @@ module.exports = function(environment) {
     contentSecurityPolicy: { 'connect-src': "'self' https://auth.firebase.com wss://*.firebaseio.com" },
     firebase: 'https://hiresly.firebaseio.com/',
     torii: {
-      sessionServiceName: 'session'
+      sessionServiceName: 'mysession'
     },
     baseURL: '/',
     locationType: 'auto',
