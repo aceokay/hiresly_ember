@@ -1,8 +1,9 @@
 import Ember from 'ember';
 
 export default Ember.Route.extend({
+  loginForm: false,
+
   beforeModel: function() {
-    debugger;
     return this.get('mysession').fetch().catch(function() {});
   },
   actions: {
@@ -14,6 +15,11 @@ export default Ember.Route.extend({
 
     signOut: function() {
       this.get("mysession").close();
+    },
+
+    showLoginForm() {
+      debugger;
+      this.set('loginForm', true);
     }
   }
 });
