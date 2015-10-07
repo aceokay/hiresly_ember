@@ -1,0 +1,12 @@
+.jumbotron {
+  background-image: url('/images/jumbo.jpeg');
+  height: 800px;
+  background-size: cover;
+  opacity: 0.8;
+}
+
+.index {
+  text-align: center;
+  padding: 20% 10%;
+  color: white;
+}
