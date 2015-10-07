@@ -2,7 +2,10 @@ import Ember from 'ember';
 
 export default Ember.Route.extend({
   model(params) {
-    return this.store.findRecord('developer', params.developer_id);
+    return Ember.RSVP.hash({
+      developer: this.store.findRecord('developer', params.developer_id),
+      problems: this.store.findAll('problem')
+    })
   },
   actions: {
     complete(developer, params) {

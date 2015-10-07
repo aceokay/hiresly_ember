@@ -1,7 +1,7 @@
 {{outlet}}
-{{#if model.name}}
-  {{dev-profile developer=model}}
-  {{first-test developer=model startTest="startTest"}}
+{{#if model.developer.name}}
+  {{dev-profile developer=model.developer}}
+  {{first-test developer=model.developer startTest="startTest"}}
 {{else}}
-  {{developer-complete-form developer=model complete="complete"}}
+  {{developer-complete-form developer=model.developer complete="complete"}}
 {{/if}}
