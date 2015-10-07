@@ -5,13 +5,23 @@ export default Ember.Route.extend({
     return Ember.RSVP.hash({
       developer: this.store.findRecord('developer', params.developer_id),
       problems: this.store.findAll('problem'),
-      showTest: false
+      showTest: false,
+      liveTests: [],
+      completedTests: []
     })
   },
   afterModel: function(model){
     if (model.developer.get('tests').get('length') !== 0) {
       model.showTest = true;
     };
+    model.developer.get('tests').forEach(function(test) {
+      // debugger;There's work to be done here.
+      if (test.get('startTime') === null) {
+        model.liveTests.push(test);
+      } else {
+        model.completedTests.push(test);
+      }
+    })
   },
   actions: {
     complete(developer, params) {
