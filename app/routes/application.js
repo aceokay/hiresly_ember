@@ -2,7 +2,6 @@ import Ember from 'ember';
 
 export default Ember.Route.extend({
   beforeModel: function() {
-    debugger;
     return this.get('mysession').fetch().catch(function() {});
   },
   actions: {
