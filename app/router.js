@@ -8,6 +8,7 @@ var Router = Ember.Router.extend({
 Router.map(function() {
   this.route('login');
   this.route('signup');
+  this.route('index', {path: '/'});
   this.route('developer', {path: '/developer/:developer_id'});
   this.route('employer', {path: '/employer/:employer_id'});
 });
