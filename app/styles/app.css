@@ -1,0 +1,70 @@
+#mainJumbo {
+  background-image: url('/images/jumbo.jpeg');
+  height: 800px;
+  background-size: cover;
+  opacity: 0.8;
+}
+
+#secondJumbo {
+  height: 700px;
+  background-color: #404547;
+}
+
+.index {
+  text-align: center;
+  padding: 20% 10%;
+  color: white;
+}
+
+.welcome {
+  text-align: center;
+  font-size: 250%;
+  padding-top: 65px;
+  padding-bottom: 65px;
+  color: white;
+  text-shadow: black 0.1em 0.1em 0.1em;
+}
+
+.block1 {
+  max-width: 25%;
+  float: left;
+  min-width: 25%;
+  margin: 10px 50px 50px 0px;
+  height: 250px;
+  box-shadow: 10px 10px 5px #888888;
+  background-color: #D0DBDB;
+}
+
+.block2 {
+  min-width: 25%;
+  max-width: 25%;
+  display: inline-block;
+  vertical-align: top;
+  float: left;
+  margin: 10px 50px 50px 10px;
+  height: 250px;
+  box-shadow: 10px 10px 5px #888888;
+  color: #4B7A7A;
+}
+
+.block3 {
+  min-width: 25%;
+  max-width: 25%;
+  display: inline-block;
+  vertical-align: top;
+  float: left;
+  margin: 10px 10px 50px 10px;
+  height: 250px;
+  box-shadow: 10px 10px 5px #888888;
+}
+
+.blocks {
+  margin: 0 0 0 10%;
+  min-width:70%;
+  overflow: hidden;
+}
+
+.block-text {
+  margin: 50px 10px 10px 20px;
+  overflow: hidden;
+}
