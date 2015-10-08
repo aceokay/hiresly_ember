@@ -15,6 +15,17 @@ export default Ember.Component.extend({
       };
       this.set('addNewDev', false);
       this.sendAction('saveNewDev', params);
-    }
+    },
+
+    signUp() {
+      var params;
+      params = {
+        email: this.get('email'),
+        password: this.get('password')
+      };
+      var context = this;
+      this.sendAction('signUp', params, context);
+      debugger;
+    },
   }
 });
