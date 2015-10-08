@@ -30,6 +30,15 @@ export default Ember.Route.extend({
       params.problem.save();
       this.transitionTo('developer', params.developer.id);
     },
+    submitAnswer(test, params) {
+      Object.keys(params).forEach(function(key) {
+        if(params[key] !== undefined) {
+          test.set(key, params[key]);
+        }
+      });
+      test.save();
+      this.transitionTo('developer', test.developer.id)
+    },
     saveVideo(params) {
       var newVideo = this.store.createRecord('video', params);
       newVideo.save();

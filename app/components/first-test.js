@@ -13,6 +13,14 @@ export default Ember.Component.extend({
         finishTime: null
       }
       this.sendAction('startTest', params);
+    },
+    submitAnswer(test) {
+      var params = {
+        githubUrl: this.get('githubUrl'),
+        videoUrl: this.get('videoUrl'),
+        finishTime: Date.now()
+      };
+      this.sendAction("submitAnswer", test, params);
     }
   }
 });
