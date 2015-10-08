@@ -9,30 +9,42 @@
 {{/if}}
 <br>
 </div>
-<div class="container">
 
+<form>
+  <input placeholder='Paste YouTube URL' class='form-control' type="text" name="name" value="">
+  <br>
+  <button {{action 'saveVideo'}} class='btn btn-success'>Upload</button>
+</form>
+
+<div class="container">
 <div class="youtube">
   <div class="row">
     <div class="col-md-6">
-    <h2>Fizz buzz Test</h2>
-    <iframe title="YouTube video player" class="youtube-player" type="text/html"
-    width="470" height="230" src="http://www.youtube.com/embed/DsOOUgWH-vQ"
-    frameborder="0" allowFullScreen></iframe>
+      <div class="embed-responsive embed-responsive-16by9">
+        <h2>Fizz buzz Test</h2>
+        <iframe title="YouTube video player" class="embed-responsive-item" type="text/html"
+        width="470" height="230" src="http://www.youtube.com/embed/DsOOUgWH-vQ"
+        frameborder="0" allowFullScreen></iframe>
+      </div>
     </div>
 
-    <div class="col-md-6">
-    <h2>Fizz buzz Test</h2>
-    <iframe title="YouTube video player" class="youtube-player" type="text/html"
-    width="470" height="230" src="http://www.youtube.com/embed/DsOOUgWH-vQ"
-    frameborder="0" allowFullScreen></iframe>
-    </div>
+      <div class="col-md-6">
+        <div class="embed-responsive embed-responsive-16by9">
+          <h2>Fizz buzz Test</h2>
+          <iframe title="YouTube video player" class="embed-responsive-item" type="text/html"
+          width="470" height="230" src="http://www.youtube.com/embed/DsOOUgWH-vQ"
+          frameborder="0" allowFullScreen></iframe>
+        </div>
+      </div>
 
-    <div class="col-md-6">
-    <h2>Fizz buzz Test</h2>
-    <iframe title="YouTube video player" class="youtube-player" type="text/html"
-    width="470" height="230" src="http://www.youtube.com/embed/DsOOUgWH-vQ"
-    frameborder="0" allowFullScreen></iframe>
-    </div>
+      <div class="col-md-6">
+        <div class="embed-responsive embed-responsive-16by9">
+          <h2>Fizz buzz Test</h2>
+          <iframe title="YouTube video player" class="embed-responsive-item" type="text/html"
+          width="470" height="230" src="http://www.youtube.com/embed/DsOOUgWH-vQ"
+          frameborder="0" allowFullScreen></iframe>
+        </div>
+      </div>
     </div>
   </div>
 </div>

@@ -20,12 +20,14 @@ export default Ember.Component.extend({
     signUp() {
       var params;
       params = {
+        name: null,
+        address: null,
         email: this.get('email'),
-        password: this.get('password')
+        password: this.get('password'),
+        userId: null
       };
       var context = this;
       this.sendAction('signUp', params, context);
-      debugger;
     },
   }
 });
