@@ -2,6 +2,10 @@
 JUMBOTRONS ON INDEX
 *****************/
 
+.navbar {
+  font-family: 'PT Sans', sans-serif;
+}
+
 #mainJumbo {
   background-image: url('/images/jumbo.jpeg');
   height: 800px;
@@ -171,4 +175,16 @@ BUTTON STYLING
 }
 .btn:focus, .btn:active:focus, .btn.active:focus {
 	outline: 0 none;
+}
+
+/************************
+DEVELOPER PAGE
+*************************/
+
+.youtube {
+  padding: 5% 0 5% 0;
+}
+
+.youtube, .developerPage {
+  font-family: 'Ubuntu', sans-serif;
 }
