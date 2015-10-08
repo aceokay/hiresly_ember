@@ -5,7 +5,7 @@
     </div>
     <ul class="nav navbar-nav pull-right">
         <li><a href="{{'/signup'}}">Sign-Up</a></li>
-      {{#if session.isAuthenticated}}
+      {{#if mysession.isAuthenticated}}
         <li><a {{action "signOut"}}>Logout</a></li>
       {{else}}
         <li><a href="{{'/login'}}">Login</a></li>

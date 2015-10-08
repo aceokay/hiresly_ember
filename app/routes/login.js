@@ -1,6 +1,11 @@
 import Ember from 'ember';
 
 export default Ember.Route.extend({
+
+  beforeModel: function() {
+    return this.get("mysession").fetch().catch(function() {});
+  },
+
   model() {
     return Ember.RSVP.hash({
       developers: this.store.findAll('developer'),
@@ -9,11 +14,19 @@ export default Ember.Route.extend({
   },
 
   actions: {
-    signIn: function(email, password) {
-      this.get("mysession").open("firebase", {
-        provider: 'password',
-        email: email,
-        password: password
+    signIn: function(params, context) {
+      var ref = new Firebase("https://hiresly.firebaseio.com/");
+      ref.authWithPassword({
+        email: params.email,
+        password: params.password
+      }, function(error, authData) {
+        if (error) {
+          alert(error);
+          window.location.reload();
+        } else {
+
+          window.location.reload();
+        }
       });
     }
   }
