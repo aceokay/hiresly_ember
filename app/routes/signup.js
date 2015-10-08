@@ -13,9 +13,10 @@ export default Ember.Route.extend({
       this.transitionTo('employer', newEmp.id);
     },
 
-    signUp(params, context) {
+    signUp(info, context) {
       var ref = new Firebase("https://hiresly.firebaseio.com/");
-      debugger;
+      var params = info;
+      var _this = this;
       ref.createUser({
         email    : params.email,
         password : params.password
@@ -23,10 +24,17 @@ export default Ember.Route.extend({
         if (error) {
           alert(error);
         } else {
-          alert("Successfully created user account with uid:" + userData.email.toString());
-          window.location.reload(true);
+          alert("Successfully created user account with uid:" + userData.uid);
+          // window.location.reload(true);
+          params.userId = userData.uid;
+          ref.child("developers").child(userData.uid).set({
+            name: null,
+            email: params.email,
+            uid: params.userId,
+          });
+          _this.transitionTo('developer', params.userId);
         }
       });
-    }
+    },
   }
 });

@@ -16,5 +16,9 @@ export default Ember.Route.extend({
     signOut: function() {
       this.get("mysession").close();
     },
+
+    transitionTo: function(mysession) {
+      this.transitionTo('developer', mysession.content.uid);
+    }
   }
 });

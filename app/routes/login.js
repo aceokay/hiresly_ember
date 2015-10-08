@@ -16,6 +16,7 @@ export default Ember.Route.extend({
   actions: {
     signIn: function(params, context) {
       var ref = new Firebase("https://hiresly.firebaseio.com/");
+      var _this = this;
       ref.authWithPassword({
         email: params.email,
         password: params.password
@@ -24,8 +25,8 @@ export default Ember.Route.extend({
           alert(error);
           window.location.reload();
         } else {
-
-          window.location.reload();
+          debugger;
+          _this.transitionTo('developer', authData.uid);
         }
       });
     }
