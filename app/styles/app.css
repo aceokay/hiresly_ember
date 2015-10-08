@@ -1,3 +1,7 @@
+/****************
+JUMBOTRONS ON INDEX
+*****************/
+
 #mainJumbo {
   background-image: url('/images/jumbo.jpeg');
   height: 800px;
@@ -20,6 +24,10 @@
   text-shadow: white 0.1em 0.1em 0.1em;
   padding-top: 10%;
 }
+
+/****************
+INDEX STYLING
+****************/
 
 .index {
   text-align: center;
@@ -80,6 +88,10 @@
   margin: 50px 10px 10px 20px;
   overflow: hidden;
 }
+
+/**************
+BUTTON STYLING
+**************/
 
 .btn {
   display: inline-block;
