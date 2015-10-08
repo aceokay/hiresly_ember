@@ -29,6 +29,15 @@ export default Ember.Route.extend({
       params.developer.save();
       params.problem.save();
       this.transitionTo('developer', params.developer.id);
+    },
+    submitAnswer(test, params) {
+      Object.keys(params).forEach(function(key) {
+        if(params[key] !== undefined) {
+          test.set(key, params[key]);
+        }
+      });
+      test.save();
+      this.transitionTo('developer', test.developer.id)
     }
   }
 });

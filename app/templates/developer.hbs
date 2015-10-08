@@ -2,7 +2,7 @@
 <div class="developerPage">
 
 {{#if model.developer.name}}
-  {{dev-profile developer=model.developer problems=model.problems showTest=model.showTest startTest="startTest"}}
+  {{dev-profile developer=model.developer problems=model.problems showTest=model.showTest startTest="startTest" submitAnswer="submitAnswer"}}
   {{dev-tests}}
 {{else}}
   {{developer-complete-form developer=model.developer complete="complete"}}
