@@ -29,6 +29,12 @@ export default Ember.Route.extend({
       params.developer.save();
       params.problem.save();
       this.transitionTo('developer', params.developer.id);
+    },
+    saveVideo(params) {
+      var newVideo = this.store.createRecord('video', params);
+      newVideo.save();
+      params.developer.save();
+      this.transitionTo('developer', params.developer.id);
     }
   }
 });
