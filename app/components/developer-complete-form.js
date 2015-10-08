@@ -11,7 +11,6 @@ export default Ember.Component.extend({
         liveTests: developer.get('liveTests'),
         userId: developer.get('id')
       };
-      debugger;
       this.sendAction('complete', developer, params);
     }
   }

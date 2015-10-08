@@ -4,11 +4,11 @@
       <a class="navbar-brand" href="{{'/'}}">Hiresly</a>
     </div>
     <ul class="nav navbar-nav pull-right">
-        <li><a href="{{'/signup'}}">Sign-Up</a></li>
       {{#if mysession.isAuthenticated}}
-        <li><a {{action "signOut"}}>Logout</a></li>
-        <li><a {{action "transitionTo" mysession}}>My Account</a></li>
+        <li><a href="#" {{action "signOut"}}>Logout</a></li>
+        <li><a href="#" {{action "transitionTo" mysession}}>My Account</a></li>
       {{else}}
+        <li><a href="{{'/signup'}}">Sign-Up</a></li>
         <li><a href="{{'/login'}}">Login</a></li>
       {{/if}}
      </ul>

@@ -25,7 +25,6 @@ export default Ember.Route.extend({
           alert(error);
           window.location.reload();
         } else {
-          debugger;
           _this.transitionTo('developer', authData.uid);
         }
       });

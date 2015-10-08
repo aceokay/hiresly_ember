@@ -15,6 +15,7 @@ export default Ember.Route.extend({
 
     signOut: function() {
       this.get("mysession").close();
+      this.transitionTo('/');
     },
 
     transitionTo: function(mysession) {
