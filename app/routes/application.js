@@ -16,10 +16,5 @@ export default Ember.Route.extend({
     signOut: function() {
       this.get("mysession").close();
     },
-
-    showLoginForm() {
-      debugger;
-      this.set('loginForm', true);
-    }
   }
 });

@@ -5,6 +5,16 @@ export default Ember.Component.extend({
   actions: {
     devLoginShow() {
       this.set('devLogin', true);
-    }
+    },
+
+    signIn() {
+      var params;
+      params = {
+        email: this.get('email'),
+        password: this.get('password')
+      };
+      var context = this;
+      this.sendAction('signIn', params, context);
+    },
   }
 });
