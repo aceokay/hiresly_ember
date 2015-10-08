@@ -188,3 +188,15 @@ DEVELOPER PAGE
 .youtube, .developerPage {
   font-family: 'Ubuntu', sans-serif;
 }
+
+/***********************
+RESPONSIVE CSS FOR INDEX
+************************/
+
+@media (max-width: 680px) {
+  /*.blocks {
+    max-height: 10px;
+    width: 100px;
+    padding: 0;*/
+  }
+}
