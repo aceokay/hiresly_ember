@@ -13,8 +13,9 @@
   {{/if}}
 </div>
 
-<h1>JOSUE TEST STUFF</h1>
-
+{{#if mysession.isAuthenticated}}
+  <p>You are already logged in as <b>{{mysession.currentUser.email}}</b></p>
+{{else}}
 <div class="container">
   <form>
     <div class="form-group">
@@ -25,11 +26,10 @@
       <label for="password">Password</label>
       {{input type="password" value=password id="password" class="form-control" placeholder="example@developer.com"}}
     </div>
-    <button {{action "signIn" email password}}>LOG ME IN</button>
+    <button {{action "signIn"}}>LOG ME IN</button>
   </form>
 </div>
-
-
+{{/if}}
 
 
 
