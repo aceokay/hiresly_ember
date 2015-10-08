@@ -12,11 +12,11 @@
 <br>
 </div>
 
-<input placeholder='Paste YouTube URL' class='form-control' type="text" name="name" value="">
-<br>
-<button class='btn btn-success'>Upload</button>
-
-
+<form>
+  <input placeholder='Paste YouTube URL' class='form-control' type="text" name="name" value="">
+  <br>
+  <button {{action 'saveVideo'}} class='btn btn-success'>Upload</button>
+</form>
 
 <div class="container">
 <div class="youtube">
