@@ -5,5 +5,5 @@ export default DS.Model.extend({
   body: DS.attr(),
   author: DS.attr(),
   difficulty: DS.attr(),
-  test: DS.hasMany('test', {async: true})
+  tests: DS.hasMany('test', {async: true})
 });

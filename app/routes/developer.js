@@ -5,23 +5,13 @@ export default Ember.Route.extend({
     return Ember.RSVP.hash({
       developer: this.store.findRecord('developer', params.developer_id),
       problems: this.store.findAll('problem'),
-      showTest: false,
-      liveTests: [],
-      completedTests: []
+      showTest: false
     })
   },
   afterModel: function(model){
     if (model.developer.get('tests').get('length') !== 0) {
       model.showTest = true;
     };
-    model.developer.get('tests').forEach(function(test) {
-      // debugger;There's work to be done here.
-      if (test.get('startTime') === null) {
-        model.liveTests.push(test);
-      } else {
-        model.completedTests.push(test);
-      }
-    })
   },
   actions: {
     complete(developer, params) {
@@ -36,9 +26,9 @@ export default Ember.Route.extend({
     startTest(params) {
       var newTest = this.store.createRecord('test', params);
       newTest.save();
-      params.testTaker.save();
+      params.developer.save();
       params.problem.save();
-      this.transitionTo('developer', params.testTaker.id);
+      this.transitionTo('developer', params.developer.id);
     }
   }
 });
