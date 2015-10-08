@@ -6,7 +6,7 @@ export default Ember.Component.extend({
       var problemSelect = problems.get('firstObject');
       var params = {
         problem: problemSelect,
-        testTaker: this.get('developer'),
+        developer: this.get('developer'),
         githubUrl: null,
         videoUrl: null,
         startTime: Date.now(),

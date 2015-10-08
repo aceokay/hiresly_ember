@@ -9,10 +9,18 @@
     <li>Portfolio: </li>
   </ul>
   <br>
+  <h3>Tests Started</h3>
+  <ul>
+    <li>To be generated dynamically</li>
+    {{#each developer.liveTests as |test|}}
+    <li>{{test.problem.title}}</li>
+    {{/each}}
+  </ul>
+  <br>
   <h3>Tests Completed</h3>
   <ul>
     <li>To be generated dynamically</li>
-    {{#each completedTests as |test|}}
+    {{#each developer.completedTests as |test|}}
     <li>{{test.problem.title}}</li>
     {{/each}}
   </ul>
