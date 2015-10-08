@@ -12,17 +12,6 @@ export default Ember.Route.extend({
     if (model.developer.get('tests').get('length') !== 0) {
       model.showTest = true;
     };
-    // var tests = model.developer.get('tests').then(function(tests) {
-    //   tests.forEach(function(test)
-    //    {
-    //      debugger;
-    //     if (test.get('finishTime') === undefined) {
-    //       model.liveTests.push(test);
-    //     } else {
-    //       model.completedTests.push(test);
-    //     }
-    //   });
-    // });
   },
   actions: {
     complete(developer, params) {
@@ -37,12 +26,8 @@ export default Ember.Route.extend({
     startTest(params) {
       var newTest = this.store.createRecord('test', params);
       newTest.save();
-      // debugger;
-      // params.developer.get('tests').addObject(newTest);
       params.developer.save();
-      // params.problem.get('tests').addObject(newTest);
       params.problem.save();
-      // this.model.reload();
       this.transitionTo('developer', params.developer.id);
     }
   }
