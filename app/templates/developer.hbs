@@ -2,10 +2,10 @@
 <div class="developerPage">
 
 {{#if model.developer.name}}
-  {{dev-profile developer=model.developer problems=model.problems showTest=model.showTest startTest="startTest" submitAnswer="submitAnswer"}}
+  {{dev-profile developer=model.developer problems=model.problems showTest=model.showTest startTest="startTest" submitAnswer="submitAnswer" mysession=mysession}}
   {{dev-tests}}
 {{else}}
-  {{developer-complete-form developer=model.developer complete="complete"}}
+  {{developer-complete-form developer=model.developer complete="complete" mysession=mysession}}
 {{/if}}
 <br>
 </div>
